@@ -1,0 +1,68 @@
+body {
+    background: linear-gradient(135deg,  
+        #ffffff 0%,  /* Bright White */
+        #E5E4E2 20%, /* Platinum */
+        #C0C0C0 40%, /* Light Silver */
+        #A9A9A9 60%, /* Metallic Gray */
+        #D3D3D3 80%, /* Soft Light Gray */
+        #ffffff 100%  /* Bright White for Shine */
+    ); 
+    background-size: 400% 400%; /* Makes gradient more dynamic */
+    animation: shineEffect 6s infinite alternate;
+    color: black;
+    font-family: Andale Mono, sans-serif;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Shiny Effect Animation */
+@keyframes shineEffect {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+}
+
+.container {
+    position: relative;
+}
+
+h1 {
+    font-size: 4rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+h1:hover {
+    opacity: 0.7;
+}
+
+#contact-info {
+    display: none;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Ensure it takes full width */
+}
+
+#contact-info p {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    line-height: 0.8; /* Reduce line height to remove spacing */
+}
+
+#contact-info span {
+    display: block; /* Each span will be on a new line */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

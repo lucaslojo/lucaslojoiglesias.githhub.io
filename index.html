@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLI</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById("contact-info");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="lli" onclick="toggleInfo()">LLI</h1>
+        <div id="contact-info">
+            <p>
+                <span>LUCAS LOJO IGLESIAS</span><br>
+                <span><a href="mailto:lucaslojoiglesias@gmail.com">lucaslojoiglesias@gmail.com</a></span><br>
+                <span>+4560536745</span><br>
+                <span>København N, Santiago de Compostela</span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
